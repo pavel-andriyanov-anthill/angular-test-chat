@@ -1,0 +1,34 @@
+.home-page {
+
+    .tab-content {
+        max-width: 900px;
+        margin: 20px auto 0;
+    }
+
+    .actions {
+        margin-top: 10px;
+        
+        button {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contact-table {
+        width: 100%;
+
+        .actions-col {
+            text-align: right;
+
+            button {
+                margin-right: 16px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

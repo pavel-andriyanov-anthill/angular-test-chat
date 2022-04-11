@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+
+    .side {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+
+        .link {
+            color: black;
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            height: 48px;
+            padding: 0 10px;
+            border-bottom: 1px solid rgba(0,0,0,.12);
+            text-decoration: none;
+        }
+    }
+}

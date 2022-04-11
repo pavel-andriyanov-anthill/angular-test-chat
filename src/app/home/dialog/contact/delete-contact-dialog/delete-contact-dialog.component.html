@@ -1,0 +1,11 @@
+<div mat-dialog-title>Delete Confirmation</div>
+
+<div mat-dialog-content>
+    <div class="contact-preview">
+        Do you really want to delete Contact {{data.firstName}} {{data.lastName}} ({{data.email}})?
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+    <button mat-button [mat-dialog-close]="data.id">Ok</button>
+</div>

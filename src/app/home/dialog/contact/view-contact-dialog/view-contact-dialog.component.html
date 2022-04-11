@@ -1,0 +1,26 @@
+<div mat-dialog-title>Contact info</div>
+
+<div mat-dialog-content>
+    <div class="contact-preview">
+        <div class="contact-field">
+            <div class="label">Contact ID:</div>
+            <div class="value">{{data.id}}</div>
+        </div>
+        <div class="contact-field">
+            <div class="label">Contact Name:</div>
+            <div class="value">{{data.firstName}} {{data.lastName}}</div>
+        </div>
+        <div class="contact-field">
+            <div class="label">Contact Email:</div>
+            <div class="value">{{data.email}}</div>
+        </div>
+        <div class="contact-field">
+            <div class="label">Contact IP Address:</div>
+            <div class="value">{{data.ipAddress}}</div>
+        </div>
+        
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</div>

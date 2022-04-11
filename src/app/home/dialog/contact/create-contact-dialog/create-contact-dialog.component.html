@@ -1,0 +1,29 @@
+    <div mat-dialog-title>Create a contact</div>
+
+    <div mat-dialog-content>
+        <div *ngIf="contactForm" [formGroup]="contactForm" class="contact-form">
+            <div class="contact-field">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your first name</mat-label>
+                    <input matInput formControlName="firstName" required>
+                </mat-form-field>
+            </div>
+            <div class="contact-field">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your last name</mat-label>
+                    <input matInput formControlName="lastName" required>
+                </mat-form-field>
+            </div>
+            <div class="contact-field">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" formControlName="email" required>
+                </mat-form-field>
+            </div>
+            
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>Close</button>
+        <button mat-button [mat-dialog-close]="contactForm.getRawValue()" [disabled]="contactForm.invalid">Create</button>
+    </div>
